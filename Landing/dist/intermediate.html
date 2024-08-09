@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Intermediate Account-Tiazzan Capitals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium Bootstrap 5 Landing Page Template"
+    />
+    <meta
+      name="keywords"
+      content="Saas, Software, multi-uses, HTML, Clean, Modern"
+    />
+    <meta name="author" content="Digitalspyse" />
+    <meta name="email" content="Contact@digitalspyse.com.ng" />
+    <meta name="website" content="https://www.digitalspyse.com.ng" />
+    <meta name="Version" content="v4.8.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/tiazzan/tab logo.png" />
+    <!-- Css -->
+    <link href="assets/libs/simplebar/simplebar.min.css" rel="stylesheet" />
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons Css -->
+    <link
+      href="assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/libs/@iconscout/unicons/css/line.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <!-- Style Css-->
+    <link
+      href="assets/css/style.min.css"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .form-body {
+        height: 500px;
+        width: 460px;
+        margin: 8% auto;
+        border-radius: 5px;
+        background: #fff !important;
+        position: relative;
+        overflow: hidden;
+      }
+      .form-body form {
+        width: 380px;
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        transition: 0.5s;
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #777;
+      }
+      form input {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 5px 0;
+        border: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+      }
+      ::placeholder {
+        color: #777;
+      }
+      .btn-box {
+        width: 100%;
+        margin: 30px auto;
+        text-align: center;
+      }
+      form button {
+        width: 120px;
+        height: 50px;
+        margin: 0 10px;
+        background: linear-gradient(to right, #0042f6, #7606ff);
+        border-radius: 30px;
+        border: 0;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      #form2 {
+        left: 550px;
+      }
+      #form3 {
+        left: 550px;
+      }
+      .step-row {
+        width: 460px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 -1px 5px -1px #000;
+      }
+      .step-col {
+        width: 152px;
+        text-align: center;
+        color: #333;
+        position: relative;
+      }
+      #progress {
+        position: absolute;
+        height: 10%;
+        width: 170px;
+        background: linear-gradient(to right, #0042f6, #7606ff);
+        transition: 0.1s;
+      }
+      #progress::after {
+        content: "";
+        height: 0;
+        width: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        position: absolute;
+        top: 0;
+        right: -20px;
+        border-left: 20px solid #7606ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="preloader">
+      <div id="status">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader -->
+
+    <section class="bg-home bg-circle-gradiant d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Logo Section (Outside of the Form) -->
+            <div class="text-center mb-4">
+              <a href="home.html"
+                ><img
+                  src="assets/images/Tiazzan Capital logo.png"
+                  class="mb-4 d-block mx-auto"
+                  alt=""
+                  style="width: 100px; height: auto"
+              /></a>
+              <h3 class="text-black">Beginner Account</h3>
+            </div>
+
+            <div class="form-body">
+              <form id="form1">
+                <h3>PERSONAL DETAILS</h3>
+                <input type="text" placeholder="First name" required="" />
+                <input type="text" placeholder="Second name" required="" />
+                <input type="text" placeholder="Phone number" required="" />
+                <div class="btn-box">
+                  <button type="button" id="next1">Next</button>
+                </div>
+              </form>
+
+              <form id="form2">
+                <h3>SOCIAL ACCOUNTS</h3>
+                <input type="text" placeholder="Facebook" />
+                <input type="text" placeholder="Twitter" />
+                <input type="text" placeholder="Instagram" optional />
+                <div class="btn-box">
+                  <button type="button" id="back1">Back</button>
+                  <button type="button" id="next2">Next</button>
+                </div>
+              </form>
+
+              <form id="form3">
+                <h3>OTHER DETAILS</h3>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="password" />
+                <input type="password" placeholder="Confirm password" />
+                <div class="btn-box">
+                  <button type="button" id="back2">Back</button>
+                  <button type="submit" id="last">Submit</button>
+                </div>
+              </form>
+              <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>Step 1</small></div>
+                <div class="step-col"><small>Step 2</small></div>
+                <div class="step-col"><small>Step 3</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/multiform.js"></script>
+  </body>
+</html>
