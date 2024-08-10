@@ -2,16 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Home - Tiazzan-Capitals</title>
+    <title>Payment Guide - Tiazzan Capital</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Premium Bootstrap 5 Landing Page Template"
+      content="Payment guide for Tiazzan Capital services"
     />
-    <meta
-      name="keywords"
-      content="Saas, Software, multi-uses, HTML, Clean, Modern"
-    />
+    <meta name="keywords" content="payment guide, Tiazzan Capital, services" />
     <meta name="author" content="digitalspyse" />
     <meta name="email" content="contact@digitalspyse.com.ng" />
     <meta name="website" content="https://www.digitalspyse.com.ng" />
@@ -50,130 +47,160 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+
+      .content-section {
+        max-height: 100vh; /* Ensures the content section doesn't exceed the viewport height */
+        overflow-y: auto; /* Allows scrolling within the content section */
+      }
+    </style>
   </head>
 
-  <body>
-    <section class="container py-5">
-      <h1 class="text-center mb-5">Payment Guide</h1>
+  <body class="bg-home bg-circle-gradiant bg-fixed overflow-hidden">
+    <section class="container content-section py-5 bg-white px-5">
+      <div class="text-center mb-5">
+        <img
+          src="assets/images/Tiazzan Capital logo.png"
+          alt="Tiazzan Capital Logo"
+          class="img-fluid mb-3"
+          style="max-width: 150px"
+        />
+        <h1 class="display-4">Payment Guide</h1>
+      </div>
 
       <div class="border-bottom mb-4 pb-3">
-        <h3>Getting Started</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          placeat eveniet id quas. Explicabo, ut!
-        </p>
-        <p>
-          1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-          excepturi veniam. Veritatis!
-        </p>
-        <p>
-          2. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Perferendis, quae.
-        </p>
-        <p>
-          3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          dicta modi minus. Doloribus repudiandae perferendis ullam.
+        <h3 class="fw-bold text-dark">Introduction</h3>
+        <p class="text-secondary">
+          Welcome to Tiazzan Capital! This guide will help you navigate the
+          payment process for our services. Follow the steps below to make your
+          payment and proceed with your chosen service.
         </p>
       </div>
 
       <div class="border-bottom mb-4 pb-3">
-        <h3>Getting Started</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          placeat eveniet id quas. Explicabo, ut!
+        <h3 class="fw-bold text-dark">Service Pricing and Duration</h3>
+        <p class="text-secondary">
+          Select the service you wish to pay for from the dropdown menu. The
+          price and duration will be displayed automatically.
         </p>
-        <p>
-          1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-          excepturi veniam. Veritatis!
-        </p>
-        <p>
-          2. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Perferendis, quae.
-        </p>
-        <p>
-          3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          dicta modi minus. Doloribus repudiandae perferendis ullam.
-        </p>
-      </div>
-
-      <div class="border-bottom mb-4 pb-3">
-        <h3>Getting Started</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          placeat eveniet id quas. Explicabo, ut!
-        </p>
-        <p>
-          1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-          excepturi veniam. Veritatis!
-        </p>
-        <p>
-          2. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Perferendis, quae.
-        </p>
-        <p>
-          3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          dicta modi minus. Doloribus repudiandae perferendis ullam.
-        </p>
-      </div>
-
-      <div class="border-bottom mb-4 pb-3">
-        <h3>Getting Started</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          placeat eveniet id quas. Explicabo, ut!
-        </p>
-        <p>
-          1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-          excepturi veniam. Veritatis!
-        </p>
-        <p>
-          2. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Perferendis, quae.
-        </p>
-        <p>
-          3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          dicta modi minus. Doloribus repudiandae perferendis ullam.
-        </p>
-      </div>
-
-      <div class="row text-center my-5 pt-5">
-        <div class="col-md-4 mb-3">
-          <div class="p-4 shadow-sm rounded">
-            <p class="h4">Beginner</p>
-            <p>
-              If you're just starting out and want to build a solid foundation,
-              click the button to proceed.
-            </p>
-            <a href="beginner.html">
-              <button class="btn btn-primary mt-3">Proceed to Payment</button>
-            </a>
+        <form id="paymentForm">
+          <div class="mb-3">
+            <label for="serviceSelect" class="form-label"
+              >Choose Your Service:</label
+            >
+            <select
+              id="serviceSelect"
+              class="form-select"
+              onchange="updatePrice()"
+            >
+              <option value="">Select a Service</option>
+              <option value="basic">Basic Access</option>
+              <option value="intermediate">Intermediate Access</option>
+              <option value="advanced">Advanced Access</option>
+              <option value="trading1m">
+                Trading Signals - Duration: 1 Month
+              </option>
+              <option value="trading3m">
+                Trading Signals - Duration: 3 Months
+              </option>
+              <option value="trading6m">
+                Trading Signals - Duration: 6 Months
+              </option>
+              <option value="trading12m">
+                Trading Signals - Duration 12 Months
+              </option>
+              <option value="propfirm">Prop Firm Passing</option>
+              <option value="coaching">
+                One-On-One Coaching Duration: 6 Months
+              </option>
+            </select>
           </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="p-4 shadow-sm rounded">
-            <p class="h4">Intermediate</p>
-            <p>
-              If you have some experience and want to enhance your skills, click
-              the button to proceed.
-            </p>
-            <a href="intermediate.html">
-              <button class="btn btn-primary mt-3">Proceed to Payment</button>
-            </a>
+          <div class="mb-3">
+            <label for="priceDisplay" class="form-label"
+              >Amount To Be Paid:</label
+            >
+            <input
+              type="text"
+              id="priceDisplay"
+              class="form-control"
+              readonly
+            />
           </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="p-4 shadow-sm rounded">
-            <p class="h4">Advanced</p>
-            <p>
-              If you're ready to tackle complex challenges and refine your
-              expertise, click the button to proceed.
-            </p>
-            <a href="advanced.html">
-              <button class="btn btn-primary mt-3">Proceed to Payment</button>
-            </a>
-          </div>
-        </div>
+        </form>
+      </div>
+
+      <div class="border-bottom mb-4 pb-3">
+        <h3 class="fw-bold text-dark">Payment Process Guide</h3>
+        <p class="text-secondary">
+          To complete your registration, please follow the steps below:
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            Deposit Payment: Please deposit the displayed amount to the account
+            details provided below.
+          </li>
+          <li class="mb-2">
+            Proof of Payment: After making the payment, save the proof of
+            payment. This will be required to complete your purchase.
+          </li>
+          <li class="mb-2">
+            Complete Registration: Once you have the proof of payment, click the
+            "Proceed To Form" button to finalize your purchase.
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-bottom mb-4 pb-3">
+        <h3 class="fw-bold text-dark">Bank Details for Payment</h3>
+        <p><strong>Bank Name:</strong> [Your Bank's Name]</p>
+        <p><strong>Account Name:</strong> [Your Account Name]</p>
+        <p><strong>Account Number:</strong> [Your Account Number]</p>
+        <p><strong>Sort Code:</strong> [Your Bank’s Sort Code]</p>
+        <p><strong>SWIFT/BIC Code:</strong> [Your Bank’s SWIFT/BIC Code]</p>
+        <p>
+          <strong>Note:</strong> Include your full name and the service you are
+          paying for as the payment reference.
+        </p>
+      </div>
+
+      <div class="text-center my-5 pt-5">
+        <a href="#">
+          <button class="btn btn-primary">Proceed To Form</button>
+        </a>
       </div>
     </section>
+
+    <script>
+      const exchangeRate = 1595;
+
+      function updatePrice() {
+        const serviceSelect = document.getElementById("serviceSelect");
+        const priceDisplay = document.getElementById("priceDisplay");
+        const prices = {
+          basic: 40,
+          intermediate: 100,
+          advanced: 250,
+          trading1m: 50,
+          trading3m: 150,
+          trading6m: 300,
+          trading12m: 500,
+          propfirm: 300,
+          coaching: 3000,
+        };
+
+        const service = serviceSelect.value;
+        if (service) {
+          const priceUSD = prices[service];
+          const priceNGN = priceUSD * exchangeRate;
+          priceDisplay.value = `$${priceUSD} (₦${priceNGN.toLocaleString()})`;
+        } else {
+          priceDisplay.value = "";
+        }
+      }
+    </script>
   </body>
 </html>

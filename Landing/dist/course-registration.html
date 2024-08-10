@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up - Video Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Video Course Sign-Up Form" />
+    <meta name="author" content="digitalspyse" />
+    <meta name="email" content="contact@digitalspyse.com.ng" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/tiazzan/tab logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: rgba(63, 143, 235, 0.1);
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+      }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .card-title {
+        font-weight: 600;
+      }
+      .form-group label {
+        font-weight: 500;
+      }
+      .form-control {
+        padding: 0 5px;
+      }
+      .form-control:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .btn {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .btn-light {
+        border: 1px solid #ced4da;
+      }
+      .form-group:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <div class="text-center mb-5">
+            <img
+              src="assets/images/Tiazzan Capital logo.png"
+              alt="Tiazzan Capital Logo"
+              class="img-fluid mb-4"
+              style="max-width: 150px"
+            />
+            <h3 class="card-title text-center mb-4">Sign Up - Video Course</h3>
+          </div>
+
+          <form>
+            <!-- Personal Details -->
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="middleName">Middle Name</label>
+              <input type="text" id="middleName" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name/Surname</label>
+              <input type="text" id="lastName" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Mail Address</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp Number</label>
+              <input type="tel" id="whatsapp" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="telegram">Telegram Number</label>
+              <input type="tel" id="telegram" class="form-control" />
+            </div>
+
+            <!-- Service Selection -->
+            <div class="form-group">
+              <label for="classSelection">Select Class</label>
+              <select
+                id="classSelection"
+                class="form-control"
+                onchange="updateServiceDetails()"
+                required
+              >
+                <option value="">Select a Class</option>
+                <option value="basic">Basic Class</option>
+                <option value="intermediate">Intermediate Class</option>
+                <option value="advanced">Advanced Class</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="price">Price In USD ($)</label>
+              <input type="text" id="price" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+              <label for="priceNaira">Price In Naira (₦)</label>
+              <input
+                type="text"
+                id="priceNaira"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="form-group">
+              <label for="duration">Duration</label>
+              <input type="text" id="duration" class="form-control" readonly />
+            </div>
+
+            <!-- Proof of Payment -->
+            <div class="form-group">
+              <label for="paymentProof">Proof of Payment</label>
+              <input
+                type="file"
+                id="paymentProof"
+                class="form-control"
+                accept=".png, .jpeg, .jpg, .svg, .pdf"
+                required
+              />
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-group text-center">
+              <button type="reset" class="btn btn-light">Reset All</button>
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      const conversionRate = 1595; // USD to Naira
+
+      function updateServiceDetails() {
+        const classSelection = document.getElementById("classSelection").value;
+        let priceUSD = "";
+        let priceNaira = "";
+        let duration = "";
+
+        if (classSelection === "basic") {
+          priceUSD = 40;
+          duration = "30 Days (1 Month)";
+        } else if (classSelection === "intermediate") {
+          priceUSD = 100;
+          duration = "60 Days (2 Months)";
+        } else if (classSelection === "advanced") {
+          priceUSD = 250;
+          duration = "90 Days (3 Months)";
+        }
+
+        priceNaira = (priceUSD * conversionRate).toLocaleString("en-NG", {
+          style: "currency",
+          currency: "NGN",
+        });
+
+        document.getElementById("price").value = `$${priceUSD}`;
+        document.getElementById("priceNaira").value = priceNaira;
+        document.getElementById("duration").value = duration;
+      }
+    </script>
+  </body>
+</html>
