@@ -1,138 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Services - Tiazzan-Capitals</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 5 Landing Page Template">
-    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern">
-    <meta name="author" content="digitalspyse">
-    <meta name="email" content="contact@digitalspyse.com.ng">
-    <meta name="website" content="https://www.digitalspyse.com.ng">
-    <meta name="Version" content="v4.8.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium Bootstrap 5 Landing Page Template"
+    />
+    <meta
+      name="keywords"
+      content="Saas, Software, multi-uses, HTML, Clean, Modern"
+    />
+    <meta name="author" content="digitalspyse" />
+    <meta name="email" content="contact@digitalspyse.com.ng" />
+    <meta name="website" content="https://www.digitalspyse.com.ng" />
+    <meta name="Version" content="v4.8.0" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/tiazzan/tab logo.png">
+    <link rel="shortcut icon" href="assets/images/tiazzan/tab logo.png" />
 
     <!-- Css -->
-    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet" />
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css">
+    <link
+      href="assets/css/bootstrap.min.css"
+      id="bootstrap-style"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Icons Css -->
-    <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+    <link
+      href="assets/libs/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/@iconscout/unicons/css/line.css"
+      type="text/css"
+      rel="stylesheet"
+    />
     <!-- Style Css-->
-    <link href="assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css">
+    <link
+      href="assets/css/style.min.css"
+      id="color-opt"
+      class="theme-opt"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Loader -->
-     <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div> 
+    <div id="preloader">
+      <div id="status">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
     <!-- Loader -->
-
 
     <!-- Navbar Start -->
     <header id="topnav" class="defaultscroll sticky navbar-white-bg">
-        <div class="container">
-            <!-- Logo container-->
-            <a class="logo" href="home.html">
-                <img src="assets/images/Tiazzan Capital logo.png" height="60" class="logo-light-mode" alt="">
+      <div class="container">
+        <!-- Logo container-->
+        <a class="logo" href="home.html">
+          <img
+            src="assets/images/Tiazzan Capital logo.png"
+            height="60"
+            class="logo-light-mode"
+            alt=""
+          />
+        </a>
+        <!-- Logo End -->
+
+        <!-- End Logo container-->
+        <div class="menu-extras">
+          <div class="menu-item">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </a>
-            <!-- Logo End -->
-
-            <!-- End Logo container-->
-            <div class="menu-extras">
-                <div class="menu-item">
-                    <!-- Mobile menu toggle-->
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                    <!-- End mobile menu toggle-->
-                </div>
-            </div>
-
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu">
-                    <li><a href="home.html" class="sub-menu-item">Home</a></li>
-                    <li><a href="about.html" class="sub-menu-item">About Us</a></li>
-                    <li class="has-submenu parent-menu-item">
-                        <a href="service.html">Our Services</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="service.html" class="sub-menu-item">Online Course</a></li>
-                            <li><a href="service.html" class="sub-menu-item">Trading Signals</a></li>
-                            <li><a href="service.html" class="sub-menu-item">Pro-Firm Account Passing</a></li>
-                            <li><a href="service.html" class="sub-menu-item">One-on-One Coaching</a></li>
-                            <li><a href="service.html" class="sub-menu-item">Webinars and Workshop</a></li>
-                            <li><a href="service.html" class="sub-menu-item">Support Services</a></li>
-                            <li><a href="service.html" class="sub-menu-item">Community Group</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
-                    <li><a href="login.html" class="sub-menu-item">Login</a></li>
-                    <li><a href="signup.html" class="sub-menu-item">Sign Up</a></li>
-                </ul>
-                <!--end navigation menu-->
-            </div>
-            <!--end navigation-->
+            <!-- End mobile menu toggle-->
+          </div>
         </div>
-        <!--end container-->
+
+        <div id="navigation">
+          <!-- Navigation Menu-->
+          <ul class="navigation-menu">
+            <li><a href="home.html" class="sub-menu-item">Home</a></li>
+            <li><a href="about.html" class="sub-menu-item">About Us</a></li>
+            <li class="has-submenu parent-menu-item">
+              <a href="service.html">Our Services</a
+              ><span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li>
+                  <a href="service.html" class="sub-menu-item">Online Course</a>
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >Trading Signals</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >Pro-Firm Account Passing</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >One-on-One Coaching</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >Webinars and Workshop</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >Support Services</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="sub-menu-item"
+                    >Community Group</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
+            <li><a href="login.html" class="sub-menu-item">Login</a></li>
+            <li><a href="signup.html" class="sub-menu-item">Sign Up</a></li>
+          </ul>
+          <!--end navigation menu-->
+        </div>
+        <!--end navigation-->
+      </div>
+      <!--end container-->
     </header>
     <!--end header-->
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <section class="bg-half-170 d-table w-100" style="background: url('assets/images/tiazzan/services\ bg.png');">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="pages-heading title-heading">
-                        <h2 class="text-white title-dark"> Get to know About Our Services</h2>
-                        <p class="text-white para-desc mb-0 mx-auto">Tiazzan capitals aims to democratize financial
-                            literacy and empower traders through comprehensive forex and Cryptoeducation. Our
-                            holistic approuch combines theoretical knoweledge with pratical experience, helping
-                            thousands acheive thier trading goals</p>
-                    </div>
-                </div>
-                <!--end col-->
+    <section
+      class="bg-half-170 d-table w-100"
+      style="background: url('assets/images/tiazzan/services\ bg.png')"
+    >
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12 text-center">
+            <div class="pages-heading title-heading">
+              <h2 class="text-white title-dark">
+                Get to know About Our Services
+              </h2>
+              <p class="text-white para-desc mb-0 mx-auto">
+                Tiazzan capitals aims to democratize financial literacy and
+                empower traders through comprehensive forex and Cryptoeducation.
+                Our holistic approuch combines theoretical knoweledge with
+                pratical experience, helping thousands acheive thier trading
+                goals
+              </p>
             </div>
-            <!--end row-->
- 
-            <div class="position-breadcrumb">
-                <nav aria-label="breadcrumb" class="d-inline-block">
-                    <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
-                        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Our Services</li>
-                    </ul>
-                </nav>
-            </div>
+          </div>
+          <!--end col-->
         </div>
-        <!--end container-->
+        <!--end row-->
+
+        <div class="position-breadcrumb">
+          <nav aria-label="breadcrumb" class="d-inline-block">
+            <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Our Services
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--end container-->
     </section>
 
     <!--end section-->
     <div class="position-relative">
-        <div class="shape overflow-hidden text-color-white">
-            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-            </svg>
-        </div>
+      <div class="shape overflow-hidden text-color-white">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
     </div>
     <!-- Hero End -->
 
@@ -141,359 +212,646 @@
    ----------------------------------------->
     <!-- Online Classes -->
 
+    <div
+      style="margin-bottom: 50px; margin-top: 100px"
+      class="container mt-50 mt-60"
+    >
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title mb-4">Class Tiers for our Online Course</h4>
+            <p class="para-desc mx-auto text-muted mb-0">
+              Enhance your trading skills with our all-level online courses,
+              offering structured guidance and support from beginner to advanced
+            </p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
 
-    <div style="margin-bottom: 50px; margin-top: 100px;" class="container mt-50 mt-60">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="section-title text-center mb-4 pb-2">
-                    <h4 class="title mb-4">Class Tiers for our Online Course</h4>
-                    <p class="para-desc mx-auto text-muted mb-0">Enhance your trading skills with our all-level online courses, offering structured guidance and support from beginner to advanced</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <span
+                class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg"
+                >Basic Access</span
+              >
+              <h2 class="fw-bold mb-0 mt-3">$40.00</h2>
+              <p class="text-muted">For a month (30 Days )</p>
+
+              <p class="text-muted">Knowledge to get strated</p>
+
+              <ul class="list-unstyled pt-3 border-top">
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Introduction to Forex
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Fundanmentals of Market
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Basic Trading Strategies
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Introduction to Trading Platforms
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Free trade signals
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <div class="d-grid">
+                  <a href="Service-registration.html">
+                    <button class="btn btn-primary">Get strated</button>
+                  </a>
                 </div>
-            </div><!--end col-->
-        </div><!--end row-->
+                <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">Basic Access</span>
-                        <h2 class="fw-bold mb-0 mt-3">$40.00</h2>
-                        <p class="text-muted">For a month (30 Days )</p>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <span
+                class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg"
+                >Intermediate Access</span
+              >
+              <h2 class="fw-bold mb-0 mt-3">$100.00</h2>
+              <p class="text-muted">Two Months (60 Days)</p>
 
-                        <p class="text-muted">Knowledge to get strated</p>
+              <p class="text-muted">Knowledge to stay ahead of the market</p>
 
-                        <ul class="list-unstyled pt-3 border-top">
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Introduction to Forex</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Fundanmentals of Market</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Basic Trading Strategies</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Introduction to Trading Platforms</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Free trade signals</li>
-                        </ul>
+              <ul class="list-unstyled pt-3 border-top">
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Everything in Beginner Level, plus
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Weekly live trading sessions
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >In dept market research
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Strategy Consultation
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Free Trading Signals
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Webiners & Q&A Sessions
+                </li>
+              </ul>
 
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Get strated</button>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
-                        </div>
-                    </div>
+              <div class="mt-4">
+                <div class="d-grid">
+                  <button class="btn btn-primary">Buy Now</button>
                 </div>
-            </div><!--end col-->
-            
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">Intermediate Access</span>
-                        <h2 class="fw-bold mb-0 mt-3">$100.00</h2>
-                        <p class="text-muted">Two Months (60 Days)</p>
+                <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                        <p class="text-muted">Knowledge to stay ahead of the market</p>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="ribbon ribbon-right ribbon-warning overflow-hidden">
+              <span class="text-center d-block shadow small h6">Best</span>
+            </div>
+            <div class="card-body p-0">
+              <span
+                class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg"
+                >Pro Access</span
+              >
+              <h2 class="fw-bold mb-0 mt-3">$250.00</h2>
+              <p class="text-muted">Three Month (90 Days)</p>
 
-                        <ul class="list-unstyled pt-3 border-top">
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Everything in Beginner Level, plus</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Weekly live trading sessions</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>In dept market research</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Strategy Consultation</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Free Trading Signals </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Webiners & Q&A Sessions </li>
-                        </ul>
+              <p class="text-muted">Advanced features for Pro Traders</p>
 
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
-                        </div>
-                    </div>
+              <ul class="list-unstyled pt-3 border-top">
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Everything in Intermediate Level, plus:
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Weekly live trading sessions
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Pro Trading Strategies
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >In dept market research
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Strategy Consultation
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Free Trading Signals
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Webiners & Q&A Sessions
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <div class="d-grid">
+                  <button class="btn btn-primary">Buy Now</button>
                 </div>
-            </div><!--end col-->
-            
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="ribbon ribbon-right ribbon-warning overflow-hidden"><span class="text-center d-block shadow small h6">Best</span></div>
-                    <div class="card-body p-0">
-                        <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">Pro Access</span>
-                        <h2 class="fw-bold mb-0 mt-3">$250.00</h2>
-                        <p class="text-muted">Three Month (90 Days)</p>
-
-                        <p class="text-muted">Advanced features for Pro Traders</p>
-
-                        <ul class="list-unstyled pt-3 border-top">
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Everything in Intermediate Level, plus:</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Weekly live trading sessions</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Pro Trading Strategies</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>In dept market research</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Strategy Consultation</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Free Trading Signals </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Webiners & Q&A Sessions </li>
-                        </ul>
-
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
+                <p class="text-muted mt-3 mb-0">Crypto payment is available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
     </div>
 
     <!-- Services -->
-    <div style="margin-bottom: 50px;" class="container mt-50 mt-60">
-        <div class="section-title text-center mb-4 pb-2">
-            <h4 class="title mb-4">Our Services</h4>
+    <div style="margin-bottom: 50px" class="container mt-50 mt-60">
+      <div class="section-title text-center mb-4 pb-2">
+        <h4 class="title mb-4">Our Services</h4>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <h3 class="text-center">Trading Signals</h3>
+              <ul class="list-unstyled pt-3">
+                <p class="h6">Service Details:</p>
+
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Daily or weekly trading signals
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Real-time alerts for entry and exit points
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Analysis of market trends and potential opportunities
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Private community
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <div class="d-grid">
+                  <a href="Service-registration.html">
+                    <button class="btn btn-primary">Get strated</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <h3 class="text-center">Trading Signals</h3>
-                        <ul class="list-unstyled pt-3">
-                            <p class="h6">Service Details:</p>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <h3 class="text-center">Pro-Firm Account Passing</h3>
+              <ul class="list-unstyled pt-3">
+                <p class="h6">Service Details:</p>
 
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Daily or weekly trading
-                                signals</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Real-time alerts for entry
-                                and exit points
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Analysis of market trends
-                                and potential opportunities
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Private community
-                            </li>
-                        </ul>
-
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Get strated</button>
-                            </div>
-                        </div>
-                    </div>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Passing HFT enabled prop firm evaluations
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Passing non-HFT evaluation accounts
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Guidance on setting up and configuring trading software
+                </li>
+              </ul>
+              <div class="mt-4">
+                <div class="d-grid">
+                  <a href="Service-registration.html">
+                    <button class="btn btn-primary">Get strated</button>
+                  </a>
                 </div>
+              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <h3 class="text-center">Pro-Firm Account Passing</h3>
-                        <ul class="list-unstyled pt-3">
-                            <p class="h6">Service Details:</p>
-
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Passing HFT enabled prop
-                                firm evaluations </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Passing non-HFT evaluation
-                                accounts
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Guidance on setting up and
-                                configuring trading software
-                            </li>
-                        </ul>
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Get strated</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <h3 class="text-center"> One-on-One Coaching
-                        </h3>
-                        <ul class="list-unstyled pt-3">
-                            <p class="h6">Service Details:</p>
-
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Personalized coaching sessions</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Mentorship programs with experienced traders</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Customized trading plans and strategies</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                class="uil uil-check-circle align-middle"></i></span>Live Trading Sessions</li>
-                                <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                    class="uil uil-check-circle align-middle"></i></span>Performance Review</li>
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Exclusive Resources</li>
-                        </ul>
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Get strated</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <h3 class="text-center">Community Group
-                        </h3>
-                        <ul class="list-unstyled pt-3">
-                            <p class="h6">Service Details:</p>
-
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Technical support for
-                                trading platforms and tools</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Customer service for course
-                                and membership inquiries
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Assistance with account
-                                setup and troubleshooting
-                            </li>
-                        </ul>
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Join Our Telegram Community</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
-                    <div class="card-body p-0">
-                        <h3 class="text-center">Support Services
-                        </h3>
-                        <ul class="list-unstyled pt-3">
-                            <p class="h6">Service Details:</p>
-
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Technical support for
-                                trading platforms and tools</li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Customer service for course
-                                and membership inquiries
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                        class="uil uil-check-circle align-middle"></i></span>Assistance with account
-                                setup and troubleshooting
-                            </li>
-                            <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i
-                                class="uil uil-check-circle align-middle"></i></span>Assistance with account
-                        setup and troubleshooting
-                    </li>
-                        </ul>
-                        <div class="mt-4">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Chat with Our Agent</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <h3 class="text-center">One-on-One Coaching</h3>
+              <ul class="list-unstyled pt-3">
+                <p class="h6">Service Details:</p>
+
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Personalized coaching sessions
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Mentorship programs with experienced traders
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Customized trading plans and strategies
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Live Trading Sessions
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Performance Review
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Exclusive Resources
+                </li>
+              </ul>
+              <div class="mt-4">
+                <div class="d-grid">
+                  <a href="Service-registration.html">
+                    <button class="btn btn-primary">Get strated</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <h3 class="text-center">Community Group</h3>
+              <ul class="list-unstyled pt-3">
+                <p class="h6">Service Details:</p>
+
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Technical support for trading platforms and tools
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Customer service for course and membership inquiries
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Assistance with account setup and troubleshooting
+                </li>
+              </ul>
+              <div class="mt-4">
+                <div class="d-grid">
+                  <button class="btn btn-primary">
+                    Join Our Telegram Community
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div
+            class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow"
+          >
+            <div class="card-body p-0">
+              <h3 class="text-center">Support Services</h3>
+              <ul class="list-unstyled pt-3">
+                <p class="h6">Service Details:</p>
+
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Technical support for trading platforms and tools
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Customer service for course and membership inquiries
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Assistance with account setup and troubleshooting
+                </li>
+                <li class="h6 text-muted mb-0">
+                  <span class="icon h5 me-2"
+                    ><i class="uil uil-check-circle align-middle"></i></span
+                  >Assistance with account setup and troubleshooting
+                </li>
+              </ul>
+              <div class="mt-4">
+                <div class="d-grid">
+                  <button class="btn btn-primary">Chat with Our Agent</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <!-- Footer Start -->
-    <footer class="footer">    
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-py-60">
-                        <div class="row">
-                            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                                <a href="#" class="logo-footer">
-                                    <img src="assets/images/tiazzan/light logo.png" height="70" alt="">
-                                </a>
-                                <p class="mt-4">We tend to empower individuals with the knowledge and skills necessary to navigate the foreign exchange market confidently, providing comprehensive education, practical tools, and ongoing support to foster informed and responsible trading</p>
-                                <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                                    <li class="list-inline-item mb-0"><a href="#" target="_blank" class="rounded"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                    <li class="list-inline-item mb-0"><a href="#" target="_blank" class="rounded"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                    <li class="list-inline-item mb-0"><a href="#" target="_blank" class="rounded"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                    <li class="list-inline-item mb-0"><a href="mailto:support@tiazzan-capitals.io" class="rounded"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                </ul><!--end icon-->
-                            </div><!--end col-->
-                    
-                            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                <h5 class="footer-head">Company</h5>
-                                <ul class="list-unstyled footer-list mt-4">
-                                    <li><a href="home.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Home</a></li>
-                                    <li><a href="about.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About Us</a></li>
-                                    <li><a href="service.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
-                                    <li><a href="contact.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Contact Us</a></li>
-                                    <li><a href="signup.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Sign Up</a></li>
-                                    <li><a href="login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
-                                </ul>
-                            </div><!--end col-->
-                    
-                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                <h5 class="footer-head">Usefull Links</h5>
-                                <ul class="list-unstyled footer-list mt-4">
-                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Forex factory</a></li>
-                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Trading View</a></li>
-                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
-                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
-                                </ul>
-                            </div><!--end col-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-py-60">
+              <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                  <a href="#" class="logo-footer">
+                    <img
+                      src="assets/images/tiazzan/light logo.png"
+                      height="70"
+                      alt=""
+                    />
+                  </a>
+                  <p class="mt-4">
+                    We tend to empower individuals with the knowledge and skills
+                    necessary to navigate the foreign exchange market
+                    confidently, providing comprehensive education, practical
+                    tools, and ongoing support to foster informed and
+                    responsible trading
+                  </p>
+                  <ul
+                    class="list-unstyled social-icon foot-social-icon mb-0 mt-4"
+                  >
+                    <li class="list-inline-item mb-0">
+                      <a href="#" target="_blank" class="rounded"
+                        ><i
+                          class="uil uil-facebook-f align-middle"
+                          title="facebook"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                      <a href="#" target="_blank" class="rounded"
+                        ><i
+                          class="uil uil-instagram align-middle"
+                          title="instagram"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                      <a href="#" target="_blank" class="rounded"
+                        ><i
+                          class="uil uil-twitter align-middle"
+                          title="twitter"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                      <a
+                        href="mailto:support@tiazzan-capitals.io"
+                        class="rounded"
+                        ><i
+                          class="uil uil-envelope align-middle"
+                          title="email"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!--end icon-->
+                </div>
+                <!--end col-->
 
-                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                <h5 class="footer-head">Newsletter</h5>
-                                <p class="mt-4">Sign up and receive the latest tips via email.</p>
-                                <form>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="foot-subscribe mb-3">
-                                                <label class="form-label">Write your email <span class="text-danger">*</span></label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                    <input type="email" name="email" id="emailsubscribe" class="form-control ps-5 rounded" placeholder="Your email : " required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="d-grid">
-                                                <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Subscribe">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div><!--end col-->
-                        </div><!--end row-->
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <h5 class="footer-head">Company</h5>
+                  <ul class="list-unstyled footer-list mt-4">
+                    <li>
+                      <a href="home.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="service.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Contact
+                        Us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="signup.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a href="login.html" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!--end col-->
 
-        <div class="footer-py-30 footer-bar">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="text-sm-start">
-                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Tiazzan Capitals. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://digitalspyse.com.ng" target="_blank" class="text-reset">Digitalspyse</a>.</p>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <h5 class="footer-head">Usefull Links</h5>
+                  <ul class="list-unstyled footer-list mt-4">
+                    <li>
+                      <a href="javascript:void(0)" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Forex
+                        factory</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Trading
+                        View</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Terms of
+                        Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="text-foot"
+                        ><i class="uil uil-angle-right-b me-1"></i> Privacy
+                        Policy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <h5 class="footer-head">Newsletter</h5>
+                  <p class="mt-4">
+                    Sign up and receive the latest tips via email.
+                  </p>
+                  <form>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="foot-subscribe mb-3">
+                          <label class="form-label"
+                            >Write your email
+                            <span class="text-danger">*</span></label
+                          >
+                          <div class="form-icon position-relative">
+                            <i
+                              data-feather="mail"
+                              class="fea icon-sm icons"
+                            ></i>
+                            <input
+                              type="email"
+                              name="email"
+                              id="emailsubscribe"
+                              class="form-control ps-5 rounded"
+                              placeholder="Your email : "
+                              required
+                            />
+                          </div>
                         </div>
-                    </div><!--end col-->
-                    <!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="d-grid">
+                          <input
+                            type="submit"
+                            id="submitsubscribe"
+                            name="send"
+                            class="btn btn-soft-primary"
+                            value="Subscribe"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+          <!--end col-->
         </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="footer-py-30 footer-bar">
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div class="text-sm-start">
+                <p class="mb-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Tiazzan Capitals. Design with
+                  <i class="mdi mdi-heart text-danger"></i> by
+                  <a
+                    href="https://digitalspyse.com.ng"
+                    target="_blank"
+                    class="text-reset"
+                    >Digitalspyse</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <!--end col-->
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+      </div>
     </footer>
 
     <!-- Footer End -->
 
-
     <!-- Back to top -->
-    <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up"
-            class="fea icon-sm icons align-middle"></i></a>
+    <a
+      href="#"
+      onclick="topFunction()"
+      id="back-to-top"
+      class="back-to-top fs-5"
+      ><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i
+    ></a>
     <!-- Back to top -->
 
     <!-- javascript -->
@@ -511,6 +869,5 @@
     <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
     <script src="assets/js/app.js"></script>
     <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
-</body>
-
+  </body>
 </html>
